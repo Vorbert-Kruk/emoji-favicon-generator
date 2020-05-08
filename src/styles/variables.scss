@@ -1,12 +1,12 @@
 $opaque-factor: 0.3;
 
-$accent: red;
+$accent: #5b6ee7;
 $accent-opaque: rgba($accent, $opaque-factor);
-$secondary: blue;
+$secondary: #fff;
 $secondary-opaque: rgba($accent, $opaque-factor);
 
 $light-color: #fff;
-$dark-color: #444;
+$dark-color: #4d4b48;
 
 :export {
   accent: $accent;
