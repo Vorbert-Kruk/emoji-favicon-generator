@@ -36,7 +36,16 @@ const Hero = () => {
         <HeroTitle>Emoji favicon generator</HeroTitle>
         <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
         <StyledLinkWrapper></StyledLinkWrapper>
-        <LinkButton></LinkButton>
+        <LinkButton emote="😀" href="#">
+          Smileys
+        </LinkButton>
+        <LinkButton emote="👨">People</LinkButton>
+        <LinkButton emote="🐶">Animals</LinkButton>
+        <LinkButton emote="🍩">Food</LinkButton>
+        <LinkButton emote="🏈">Activities</LinkButton>
+        <LinkButton emote="🖥">Objects</LinkButton>
+        <LinkButton emote="❤">Symbols</LinkButton>
+        <LinkButton emote="🚩">Flags</LinkButton>
       </StyledContentWrapper>
     </StyledWrapper>
   );
