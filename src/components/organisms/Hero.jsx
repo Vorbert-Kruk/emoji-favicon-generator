@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import styled from 'styled-components';
+import Emoji from 'a11y-react-emoji';
 
 import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
 
@@ -24,7 +25,9 @@ const Hero = () => {
   return (
     <StyledWrapper>
       <StyledContentWrapper>
-        <HeroEmojiCard>😀</HeroEmojiCard>
+        <HeroEmojiCard>
+          <Emoji symbol="😀" />
+        </HeroEmojiCard>
       </StyledContentWrapper>
     </StyledWrapper>
   );
