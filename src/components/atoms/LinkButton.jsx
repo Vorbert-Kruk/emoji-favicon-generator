@@ -13,6 +13,10 @@ const StyledButtonWrapper = styled.a`
   margin-right: 0.75rem;
   margin-top: 0.75rem;
   text-decoration: none;
+
+  span {
+    margin-left: 0.35rem;
+  }
 `;
 
 const propTypes = {
