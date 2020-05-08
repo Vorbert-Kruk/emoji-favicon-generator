@@ -8,6 +8,8 @@ $secondary-opaque: rgba($accent, $opaque-factor);
 $light-color: #fff;
 $dark-color: #4d4b48;
 
+$max-content-width: 1400px;
+
 :export {
   accent: $accent;
   accentOpaque: $accent-opaque;
@@ -15,4 +17,5 @@ $dark-color: #4d4b48;
   secondaryOpaque: $secondary-opaque;
   lightColor: $light-color;
   darkColor: $dark-color;
+  maxContentWidth: $max-content-width;
 }
