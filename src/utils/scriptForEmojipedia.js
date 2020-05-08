@@ -9,7 +9,7 @@ const heh = {};
   const emojiName = getObjectName(
     itemContent
       .join('')
-      .replace(/[-,:’.()]/g, '')
+      .replace(/[-,:’.()!“”]/g, '')
       .replace(/[&]/, 'And')
   );
   heh[emojiName] = emojiFace;
