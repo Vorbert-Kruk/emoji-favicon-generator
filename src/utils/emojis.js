@@ -5,7 +5,7 @@ import accessories from './accessories';
 import animals from './animals';
 import nature from './nature';
 import food from './food';
-import sport from './sport';
+import activities from './activities';
 import travel from './travel';
 import objects from './objects';
 import symbols from './symbols';
@@ -19,7 +19,7 @@ const emojis = {
   animals,
   nature,
   food,
-  sport,
+  activities,
   travel,
   objects,
   symbols,
