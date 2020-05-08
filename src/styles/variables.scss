@@ -1,0 +1,18 @@
+$opaque-factor: 0.3;
+
+$accent: red;
+$accent-opaque: rgba($accent, $opaque-factor);
+$secondary: blue;
+$secondary-opaque: rgba($accent, $opaque-factor);
+
+$light-color: #fff;
+$dark-color: #444;
+
+:export {
+  accent: $accent;
+  accentOpaque: $accent-opaque;
+  secondary: $secondary;
+  secondaryOpaque: $secondary-opaque;
+  lightColor: $light-color;
+  darkColor: $dark-color;
+}

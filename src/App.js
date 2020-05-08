@@ -1,7 +1,14 @@
 import React from 'react';
 
+import withTheme from 'theme/withTheme';
+import Hero from 'components/organisms/Hero';
+
 function App() {
-  return <div className='App'></div>;
+  return (
+    <div className="App">
+      <Hero>heh</Hero>
+    </div>
+  );
 }
 
-export default App;
+export default withTheme(App);
