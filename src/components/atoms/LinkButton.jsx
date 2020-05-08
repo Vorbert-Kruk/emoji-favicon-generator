@@ -8,20 +8,24 @@ const StyledButtonWrapper = styled.a`
   font-size: 1.75rem;
   color: ${({ theme }) => theme.secondary};
   background-color: ${({ theme }) => theme.secondaryOpaque};
-  padding: 0.15em 0.35em;
+  padding: 0.15em 0.5em;
+  border-radius: 0.5rem;
+  margin-right: 0.75rem;
+  margin-top: 0.75rem;
+  text-decoration: none;
 `;
 
 const propTypes = {
-  emoji: PropTypes.string.isRequired,
+  emote: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
 };
 
 const defaultProps = {};
 
-const LinkButton = ({ children, emoji, ...others }) => (
+const LinkButton = ({ children, emote, ...others }) => (
   <StyledButtonWrapper {...others}>
     {children}
-    <Emoji symbol={emoji} />
+    <Emoji symbol={emote} />
   </StyledButtonWrapper>
 );
 

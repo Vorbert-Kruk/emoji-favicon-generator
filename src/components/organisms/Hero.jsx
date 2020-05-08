@@ -2,10 +2,11 @@ import React, { memo } from 'react';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 
+import LinkButtonContainer from 'components/molecules/LinkButtonContainer';
+
 import HeroTitle from 'components/atoms/HeroTitle';
 import HeroDescription from 'components/atoms/HeroDescription';
 import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
-import LinkButton from 'components/atoms/LinkButton';
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.accent};
@@ -21,8 +22,6 @@ const StyledContentWrapper = styled.div`
   align-items: center;
 `;
 
-const StyledLinkWrapper = styled.div``;
-
 const propTypes = {};
 const defaultProps = {};
 
@@ -35,17 +34,7 @@ const Hero = () => {
         </HeroEmojiCard>
         <HeroTitle>Emoji favicon generator</HeroTitle>
         <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
-        <StyledLinkWrapper></StyledLinkWrapper>
-        <LinkButton emote="😀" href="#">
-          Smileys
-        </LinkButton>
-        <LinkButton emote="👨">People</LinkButton>
-        <LinkButton emote="🐶">Animals</LinkButton>
-        <LinkButton emote="🍩">Food</LinkButton>
-        <LinkButton emote="🏈">Activities</LinkButton>
-        <LinkButton emote="🖥">Objects</LinkButton>
-        <LinkButton emote="❤">Symbols</LinkButton>
-        <LinkButton emote="🚩">Flags</LinkButton>
+        <LinkButtonContainer />
       </StyledContentWrapper>
     </StyledWrapper>
   );

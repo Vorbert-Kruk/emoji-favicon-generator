@@ -3,7 +3,7 @@ $opaque-factor: 0.3;
 $accent: #5b6ee7;
 $accent-opaque: rgba($accent, $opaque-factor);
 $secondary: #fff;
-$secondary-opaque: rgba($accent, $opaque-factor);
+$secondary-opaque: rgba($secondary, $opaque-factor);
 
 $light-color: #fff;
 $dark-color: #4d4b48;
