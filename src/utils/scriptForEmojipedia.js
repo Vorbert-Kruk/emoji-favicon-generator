@@ -16,3 +16,6 @@ const emojis = {};
 });
 
 document.body.innerHTML = JSON.stringify(emojis);
+
+// https://unicode.org/emoji/charts/full-emoji-list.html
+// https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb
