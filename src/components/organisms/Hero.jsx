@@ -5,6 +5,7 @@ import Emoji from 'a11y-react-emoji';
 import HeroTitle from 'components/atoms/HeroTitle';
 import HeroDescription from 'components/atoms/HeroDescription';
 import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
+import LinkButton from 'components/atoms/LinkButton';
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.accent};
@@ -20,6 +21,8 @@ const StyledContentWrapper = styled.div`
   align-items: center;
 `;
 
+const StyledLinkWrapper = styled.div``;
+
 const propTypes = {};
 const defaultProps = {};
 
@@ -32,6 +35,8 @@ const Hero = () => {
         </HeroEmojiCard>
         <HeroTitle>Emoji favicon generator</HeroTitle>
         <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
+        <StyledLinkWrapper></StyledLinkWrapper>
+        <LinkButton></LinkButton>
       </StyledContentWrapper>
     </StyledWrapper>
   );
