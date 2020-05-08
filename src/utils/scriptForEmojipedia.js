@@ -6,7 +6,12 @@ const heh = {};
   const itemContent = emojiItem.innerText.split(' ');
   const emojiFace = itemContent[0];
   itemContent.shift();
-  const emojiName = getObjectName(itemContent.join('').replace(/[-,:’]/g, ''));
+  const emojiName = getObjectName(
+    itemContent
+      .join('')
+      .replace(/[-,:’.()]/g, '')
+      .replace(/[&]/, 'And')
+  );
   heh[emojiName] = emojiFace;
 });
 
