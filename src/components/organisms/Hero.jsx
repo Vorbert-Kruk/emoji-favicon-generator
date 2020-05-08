@@ -2,6 +2,8 @@ import React, { memo } from 'react';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 
+import HeroTitle from 'components/atoms/HeroTitle';
+import HeroDescription from 'components/atoms/HeroDescription';
 import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
 
 const StyledWrapper = styled.div`
@@ -28,6 +30,8 @@ const Hero = () => {
         <HeroEmojiCard>
           <Emoji symbol="😀" />
         </HeroEmojiCard>
+        <HeroTitle>Emoji favicon generator</HeroTitle>
+        <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
       </StyledContentWrapper>
     </StyledWrapper>
   );
