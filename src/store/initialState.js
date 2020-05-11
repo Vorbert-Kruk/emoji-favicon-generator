@@ -1,5 +1,3 @@
-const initialState = {
-  pickedEmoji: undefined
-};
+const initialState = {};
 
 export default initialState;

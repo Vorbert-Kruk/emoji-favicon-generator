@@ -1,8 +1,8 @@
 import actionTypes from './actionTypes';
 
 const initialState = {
-  emoji: undefined,
-  visible: undefined
+  emoji: '😀',
+  visible: true
 };
 
 export default function modalReducer(state = initialState, action) {

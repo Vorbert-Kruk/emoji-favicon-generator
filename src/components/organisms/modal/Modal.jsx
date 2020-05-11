@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 
@@ -28,11 +29,12 @@ const StyledEmojiWrapper = styled.div`
 `;
 
 const EmojiPopup = () => {
+  const { visible, emoji } = useSelector(state => state.modalReducer);
   return (
-    <StyledWrapper>
+    <StyledWrapper visible={visible}>
       <StyledHeader>Picked emoji:</StyledHeader>
       <StyledEmojiWrapper>
-        <Emoji symbol={'😀'} />
+        <Emoji symbol={emoji} />
       </StyledEmojiWrapper>
     </StyledWrapper>
   );

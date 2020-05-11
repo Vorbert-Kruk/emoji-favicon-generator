@@ -53,7 +53,6 @@ const people = {
   womanShrugging: '🤷‍♀️',
   manHealthWorker: '👨‍⚕️',
   womanHealthWorker: '👩‍⚕️',
-  student: '🧑‍🎓',
   manStudent: '👨‍🎓',
   womanStudent: '👩‍🎓',
   teacher: '🧑‍🏫',
