@@ -1,3 +1,5 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import homePageReducer from 'views/homepage/reducer';
+
+export default combineReducers({ homePageReducer });

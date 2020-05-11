@@ -1,7 +1,7 @@
 import React from 'react';
 
 import withTheme from 'theme/withTheme';
-import HomePage from 'views/HomePage';
+import HomePage from 'views/homepage/HomePage';
 import EmojiPopup from 'components/organisms/EmojiPopup';
 
 function App() {
