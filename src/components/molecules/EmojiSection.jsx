@@ -31,6 +31,8 @@ const propTypes = {
 
 const defaultProps = {};
 
+// TODO Vorbert -> dodać powiększenie się emotki przy najechaniu na niej, np.: transform: scale(1.25); wydaje się zacne xD
+
 const EmojiSection = ({ id, name, emojis }) => {
   return (
     <StyledWrapper id={id}>
