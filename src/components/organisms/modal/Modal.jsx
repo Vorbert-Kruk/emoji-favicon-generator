@@ -7,8 +7,9 @@ import cx from 'classnames';
 import { useDispatch } from 'react-redux';
 
 import Button from 'components/atoms/Button';
-import { hideModal } from 'components/organisms/modal/actions';
+import CodeLabel from 'components/atoms/CodeLabel';
 import ModalCloseButton from 'components/atoms/ModalCloseButton';
+import { hideModal } from 'components/organisms/modal/actions';
 
 const StyledWrapper = styled.div`
   position: fixed;
@@ -67,6 +68,7 @@ const EmojiPopup = () => {
       <StyledEmojiWrapper>
         <Emoji symbol={emoji} />
       </StyledEmojiWrapper>
+      <CodeLabel emote={emoji} />
       <StyledButtonWrapper>
         <Button>Download SVG</Button>
         <Button>Copy Code</Button>
