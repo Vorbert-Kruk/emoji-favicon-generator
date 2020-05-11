@@ -21,7 +21,6 @@ const food = {
   potato: '🥔',
   carrot: '🥕',
   earofCorn: '🌽',
-  hotPepper: '🌶',
   cucumber: '🥒',
   leafyGreen: '🥬',
   broccoli: '🥦',
@@ -110,9 +109,8 @@ const food = {
   mate: '🧉',
   ice: '🧊',
   chopsticks: '🥢',
-  forkAndKnifewithPlate: '🍽',
   forkAndKnife: '🍴',
-  spoon: '🥄',
+  spoon: '🥄'
 };
 
 export default food;
