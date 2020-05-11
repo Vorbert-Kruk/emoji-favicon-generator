@@ -5,7 +5,6 @@ const flags = {
   blackFlag: '🏴',
   whiteFlag: '🏳',
   rainbowFlag: '🏳️‍🌈',
-  transgenderFlag: '🏳️‍⚧️',
   pirateFlag: '🏴‍☠️',
   flagAscensionIsland: '🇦🇨',
   flagAndorra: '🇦🇩',

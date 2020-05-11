@@ -17,7 +17,6 @@ const smileys = {
   starStruck: '🤩',
   faceBlowingaKiss: '😘',
   kissingFace: '😗',
-  smilingFace: '☺',
   kissingFacewithClosedEyes: '😚',
   kissingFacewithSmilingEyes: '😙',
   faceSavoringFood: '😋',
@@ -64,7 +63,6 @@ const smileys = {
   confusedFace: '😕',
   worriedFace: '😟',
   slightlyFrowningFace: '🙁',
-  frowningFace: '☹',
   facewithOpenMouth: '😮',
   hushedFace: '😯',
   astonishedFace: '😲',
@@ -92,7 +90,6 @@ const smileys = {
   smilingFacewithHorns: '😈',
   angryFacewithHorns: '👿',
   skull: '💀',
-  skullAndCrossbones: '☠',
   pileofPoo: '💩',
   clownFace: '🤡',
   ogre: '👹',
@@ -109,7 +106,7 @@ const smileys = {
   kissingCat: '😽',
   wearyCat: '🙀',
   cryingCat: '😿',
-  poutingCat: '😾',
+  poutingCat: '😾'
 };
 
 export default smileys;

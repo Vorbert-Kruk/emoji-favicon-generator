@@ -44,7 +44,6 @@ const bodyParts = {
   tooth: '🦷',
   bone: '🦴',
   eyes: '👀',
-  eye: '👁',
   tongue: '👅',
   mouth: '👄',
   kissMark: '💋',

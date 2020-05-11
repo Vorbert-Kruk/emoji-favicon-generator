@@ -53,7 +53,6 @@ const animals = {
   hamster: '🐹',
   rabbitFace: '🐰',
   rabbit: '🐇',
-  chipmunk: '🐿',
   hedgehog: '🦔',
   bat: '🦇',
   bear: '🐻',
@@ -73,7 +72,6 @@ const animals = {
   frontFacingBabyChick: '🐥',
   bird: '🐦',
   penguin: '🐧',
-  dove: '🕊',
   eagle: '🦅',
   duck: '🦆',
   swan: '🦢',
@@ -106,15 +104,13 @@ const animals = {
   honeybee: '🐝',
   ladyBeetle: '🐞',
   cricket: '🦗',
-  spider: '🕷',
-  spiderWeb: '🕸',
   scorpion: '🦂',
   mosquito: '🦟',
   microbe: '🦠',
   crab: '🦀',
   lobster: '🦞',
   shrimp: '🦐',
-  squid: '🦑',
+  squid: '🦑'
 };
 
 export default animals;

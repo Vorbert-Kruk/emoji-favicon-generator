@@ -1,8 +1,6 @@
 const clothingAndAccessories = {
   closedUmbrella: '🌂',
-  umbrella: '☂',
   glasses: '👓',
-  sunglasses: '🕶',
   goggles: '🥽',
   labCoat: '🥼',
   safetyVest: '🦺',
@@ -38,10 +36,9 @@ const clothingAndAccessories = {
   topHat: '🎩',
   graduationCap: '🎓',
   billedCap: '🧢',
-  rescueWorkersHelmet: '⛑',
   lipstick: '💄',
   ring: '💍',
-  briefcase: '💼',
+  briefcase: '💼'
 };
 
 export default clothingAndAccessories;
