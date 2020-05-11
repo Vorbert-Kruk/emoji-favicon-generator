@@ -13,7 +13,7 @@ const StyledSectionHeader = styled.h2`
 const propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  emojis: PropTypes.objectOf(PropTypes.object).isRequired
+  emojis: PropTypes.objectOf(PropTypes.string).isRequired
 };
 
 const defaultProps = {};
@@ -23,7 +23,7 @@ const EmojiSection = ({ id, name, emojis }) => {
     <StyledWrapper id={id}>
       <StyledSectionHeader>{name}</StyledSectionHeader>
       {Object.values(emojis).map(emoji => (
-        <EmojiCard emoji={emoji} />
+        <EmojiCard emoji={emoji} key={emoji} />
       ))}
     </StyledWrapper>
   );
