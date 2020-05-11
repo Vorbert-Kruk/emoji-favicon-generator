@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 import EmojiSection from 'components/molecules/EmojiSection';
 
-const StyledWrapper = styled.div``;
+const StyledWrapper = styled.div`
+  max-width: ${({ theme }) => theme.maxContentWidth};
+  margin: 0 auto;
+`;
 
 const EmojisSections = () => {
   return (

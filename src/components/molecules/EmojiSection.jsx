@@ -5,8 +5,6 @@ import styled from 'styled-components';
 import EmojiCard from 'components/atoms/EmojiCard';
 
 const StyledWrapper = styled.section`
-  max-width: ${({ theme }) => theme.maxContentWidth};
-  margin: 0 auto;
   margin-top: 1.25rem;
 `;
 
