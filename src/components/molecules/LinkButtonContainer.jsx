@@ -30,7 +30,7 @@ const LinkButtonContainer = () => {
           };
         })
         .map(emojiCategory => (
-          <LinkButton emote={emojiCategory.categoryEmoji} href="#">
+          <LinkButton emote={emojiCategory.categoryEmoji} key={emojiCategory.categoryName} href="#">
             {emojiCategory.categoryName}
           </LinkButton>
         ))}

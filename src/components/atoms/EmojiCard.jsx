@@ -6,15 +6,15 @@ import Emoji from 'a11y-react-emoji';
 const StyledWrapper = styled.div``;
 
 const propTypes = {
-  emote: PropTypes.string.isRequired
+  emoji: PropTypes.string.isRequired
 };
 
 const defaultProps = {};
 
-const EmojiCard = ({ emote }) => {
+const EmojiCard = ({ emoji }) => {
   return (
     <StyledWrapper>
-      <Emoji symbol={emote} />
+      <Emoji symbol={emoji} />
     </StyledWrapper>
   );
 };
