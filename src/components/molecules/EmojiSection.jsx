@@ -4,9 +4,15 @@ import styled from 'styled-components';
 
 import EmojiCard from 'components/atoms/EmojiCard';
 
-const StyledWrapper = styled.section``;
+const StyledWrapper = styled.section`
+  max-width: ${({ theme }) => theme.maxContentWidth};
+  margin: 0 auto;
+  margin-top: 1.25rem;
+`;
 
 const StyledSectionHeader = styled.h2`
+  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
   color: ${({ theme }) => theme.accent};
 `;
 
