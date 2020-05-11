@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
+import { useDispatch } from 'react-redux';
+
+import { storeEmoji, showModal } from 'components/organisms/modal/actions';
 
 const StyledWrapper = styled.div`
   padding: 1rem 0.75rem;
@@ -26,8 +29,15 @@ const propTypes = {
 const defaultProps = {};
 
 const EmojiCard = ({ emoji }) => {
+  const dispatch = useDispatch();
+
+  const handleClick = () => {
+    dispatch(storeEmoji(emoji));
+    dispatch(showModal());
+  };
+
   return (
-    <StyledWrapper>
+    <StyledWrapper onClick={handleClick}>
       <Emoji symbol={emoji} />
     </StyledWrapper>
   );

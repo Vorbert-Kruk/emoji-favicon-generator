@@ -1,9 +1,19 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
 
 import rootReducer from './rootReducer';
 import initialState from './initialState';
 
-const store = createStore(rootReducer, initialState, composeWithDevTools());
+function configureStore() {
+  const composeEnhancers = composeWithDevTools({
+    trace: true,
+    traceLimit: 25
+  });
+
+  return createStore(rootReducer, initialState, composeEnhancers(applyMiddleware(thunk)));
+}
+
+const store = configureStore();
 
 export default store;
