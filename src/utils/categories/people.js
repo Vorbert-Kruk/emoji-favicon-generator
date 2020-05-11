@@ -131,7 +131,6 @@ const people = {
   elf: '🧝',
   manElf: '🧝‍♂️',
   womanElf: '🧝‍♀️',
-  genie: '🧞',
   manGenie: '🧞‍♂️',
   womanGenie: '🧞‍♀️',
   zombie: '🧟',

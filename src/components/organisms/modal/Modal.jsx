@@ -16,6 +16,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   transform: translateX(calc(100% + 1.25rem));
   transition: 350ms ease;
+  min-width: calc((100vw - ${({ theme }) => theme.maxContentWidth}) * 0.5 - 2.5rem);
 
   &.visible {
     transform: translateX(0);
