@@ -14,6 +14,14 @@ const StyledSectionHeader = styled.h2`
   color: ${({ theme }) => theme.accent};
 `;
 
+const StyledEmojiWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 75px));
+  justify-items: center;
+  justify-content: stretch;
+  align-items: center;
+`;
+
 const propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
@@ -26,9 +34,11 @@ const EmojiSection = ({ id, name, emojis }) => {
   return (
     <StyledWrapper id={id}>
       <StyledSectionHeader>{name}</StyledSectionHeader>
-      {Object.values(emojis).map(emoji => (
-        <EmojiCard emoji={emoji} key={emoji} />
-      ))}
+      <StyledEmojiWrapper>
+        {Object.values(emojis).map(emoji => (
+          <EmojiCard emoji={emoji} key={emoji} />
+        ))}
+      </StyledEmojiWrapper>
     </StyledWrapper>
   );
 };
