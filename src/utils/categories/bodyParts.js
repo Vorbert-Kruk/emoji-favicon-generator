@@ -1,4 +1,4 @@
-const body = {
+const bodyParts = {
   wavingHand: '👋',
   raisedBackofHand: '🤚',
   handwithFingersSplayed: '🖐',
@@ -48,7 +48,7 @@ const body = {
   tongue: '👅',
   mouth: '👄',
   kissMark: '💋',
-  footprints: '👣',
+  footprints: '👣'
 };
 
-export default body;
+export default bodyParts;

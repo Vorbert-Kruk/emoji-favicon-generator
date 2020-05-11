@@ -9,56 +9,56 @@ import travel from './categories/travel';
 import objects from './categories/objects';
 import symbols from './categories/symbols';
 import flags from './categories/flags';
-import body from './categories/body';
+import bodyParts from './categories/bodyParts';
 
 const emojis = {
   smileys: {
-    categoryEmote: smileys.smilingFace,
-    ...smileys
+    categoryEmoji: smileys.grinningFace,
+    emojis: smileys
   },
   people: {
-    categoryEmote: people.manBeard,
-    ...people
+    categoryEmoji: people.manBeard,
+    emojis: people
   },
   clothingAndAccessories: {
-    categoryEmote: clothingAndAccessories.tShirt,
-    ...clothingAndAccessories
+    categoryEmoji: clothingAndAccessories.tShirt,
+    emojis: clothingAndAccessories
   },
   animals: {
-    categoryEmote: animals.dogFace,
-    ...animals
+    categoryEmoji: animals.dogFace,
+    emojis: animals
   },
   nature: {
-    categoryEmote: nature.evergreenTree,
-    ...nature
+    categoryEmoji: nature.evergreenTree,
+    emojis: nature
   },
   food: {
-    categoryEmote: food.doughnut,
-    ...food
+    categoryEmoji: food.doughnut,
+    emojis: food
   },
   activities: {
-    categoryEmote: activities.fishingPole,
-    ...activities
+    categoryEmoji: activities.fishingPole,
+    emojis: activities
   },
   travel: {
-    categoryEmote: travel.train,
-    ...travel
+    categoryEmoji: travel.train,
+    emojis: travel
   },
   objects: {
-    categoryEmote: objects.movieCamera,
-    ...objects
+    categoryEmoji: objects.movieCamera,
+    emojis: objects
   },
   symbols: {
-    categoryEmote: symbols.redHeart,
-    ...symbols
+    categoryEmoji: symbols.redHeart,
+    emojis: symbols
   },
   flags: {
-    categoryEmote: flags.triangularFlag,
-    ...flags
+    categoryEmoji: flags.triangularFlag,
+    emojis: flags
   },
-  body: {
-    categoryEmote: body.leg,
-    ...body
+  bodyParts: {
+    categoryEmoji: bodyParts.leg,
+    emojis: bodyParts
   }
 };
 

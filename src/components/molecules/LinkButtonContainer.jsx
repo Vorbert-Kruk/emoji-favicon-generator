@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import styled from 'styled-components';
 
+import emojis from 'utils/emojis';
 import LinkButton from 'components/atoms/LinkButton';
 
 const StyledWrapper = styled.div`
@@ -11,33 +12,30 @@ const StyledWrapper = styled.div`
   justify-content: center;
 `;
 
-const LinkButtonContainer = () => (
-  <StyledWrapper>
-    <LinkButton emote="😀" href="#">
-      Smileys
-    </LinkButton>
-    <LinkButton emote="👨" href="#">
-      People
-    </LinkButton>
-    <LinkButton emote="🐶" href="#">
-      Animals
-    </LinkButton>
-    <LinkButton emote="🍩" href="#">
-      Food
-    </LinkButton>
-    <LinkButton emote="🎣" href="#">
-      Activities
-    </LinkButton>
-    <LinkButton emote="🎥" href="#">
-      Objects
-    </LinkButton>
-    <LinkButton emote="❤️" href="#">
-      Symbols
-    </LinkButton>
-    <LinkButton emote="🚩" href="#">
-      Flags
-    </LinkButton>
-  </StyledWrapper>
-);
+const LinkButtonContainer = () => {
+  const formatCategoryName = categoryName =>
+    categoryName
+      .split(/(?=[A-Z])/)
+      .join(' ')
+      .toLowerCase();
+
+  return (
+    <StyledWrapper>
+      {Object.keys(emojis)
+        .map(emojiKey => {
+          const currentEmojiCategory = emojis[emojiKey];
+          return {
+            categoryName: formatCategoryName(emojiKey),
+            ...currentEmojiCategory
+          };
+        })
+        .map(emojiCategory => (
+          <LinkButton emote={emojiCategory.categoryEmoji} href="#">
+            {emojiCategory.categoryName}
+          </LinkButton>
+        ))}
+    </StyledWrapper>
+  );
+};
 
 export default memo(LinkButtonContainer);
