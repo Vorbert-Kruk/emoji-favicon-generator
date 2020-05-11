@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import Emoji from 'a11y-react-emoji';
 import styled from 'styled-components';
 
 import { getFaviconEmoji } from 'utils/utils';
