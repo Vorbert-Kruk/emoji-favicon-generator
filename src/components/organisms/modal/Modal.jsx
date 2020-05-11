@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
+import cx from 'classnames';
 
 const StyledWrapper = styled.div`
   position: fixed;
@@ -13,6 +14,12 @@ const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.accent};
   flex-direction: column;
   align-items: center;
+  transform: translateX(calc(100% + 1.25rem));
+  transition: 350ms ease;
+
+  &.visible {
+    transform: translateX(0);
+  }
 `;
 
 const StyledHeader = styled.h3`
@@ -30,8 +37,10 @@ const StyledEmojiWrapper = styled.div`
 
 const EmojiPopup = () => {
   const { visible, emoji } = useSelector(state => state.modalReducer);
+  const styledWrapperClassName = cx({ visible });
+
   return (
-    <StyledWrapper visible={visible}>
+    <StyledWrapper className={styledWrapperClassName}>
       <StyledHeader>Picked emoji:</StyledHeader>
       <StyledEmojiWrapper>
         <Emoji symbol={emoji} />
