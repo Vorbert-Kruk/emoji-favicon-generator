@@ -3,6 +3,11 @@ import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 import cx from 'classnames';
+// TODO Vorbert -> zastanowić się nad eksportem do ModalCloseButton
+import { useDispatch } from 'react-redux';
+
+import { hideModal } from 'components/organisms/modal/actions';
+import ModalCloseButton from 'components/atoms/ModalCloseButton';
 
 const StyledWrapper = styled.div`
   position: fixed;
@@ -39,9 +44,15 @@ const StyledEmojiWrapper = styled.div`
 const EmojiPopup = () => {
   const { visible, emoji } = useSelector(state => state.modalReducer);
   const styledWrapperClassName = cx({ visible });
+  const dispatch = useDispatch();
+
+  const handleHideModal = () => {
+    dispatch(hideModal());
+  };
 
   return (
     <StyledWrapper className={styledWrapperClassName}>
+      <ModalCloseButton onClick={handleHideModal} />
       <StyledHeader>Picked emoji:</StyledHeader>
       <StyledEmojiWrapper>
         <Emoji symbol={emoji} />
