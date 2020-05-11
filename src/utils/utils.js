@@ -1,4 +1,4 @@
-export const formatCategoryName = categoryName =>
+export const getFormatedCategoryName = categoryName =>
   categoryName
     .split(/(?=[A-Z])/)
     .join(' ')

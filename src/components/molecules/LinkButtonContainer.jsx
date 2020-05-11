@@ -15,8 +15,12 @@ const StyledWrapper = styled.div`
 const LinkButtonContainer = () => {
   return (
     <StyledWrapper>
-      {Object.values(emojis).map(emojiCategory => (
-        <LinkButton emote={emojiCategory.titleEmoji} key={emojiCategory.name} href="#">
+      {Object.values(emojis).map((emojiCategory, categoryIndex) => (
+        <LinkButton
+          emote={emojiCategory.titleEmoji}
+          key={emojiCategory.name}
+          href={`#${Object.getOwnPropertyNames(emojis)[categoryIndex]}`}
+        >
           {emojiCategory.name}
         </LinkButton>
       ))}

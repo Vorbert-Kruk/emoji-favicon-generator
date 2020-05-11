@@ -11,67 +11,67 @@ import symbols from './categories/symbols';
 import flags from './categories/flags';
 import bodyParts from './categories/bodyParts';
 
+import { getFormatedCategoryName } from './utils';
+
 const emojis = {
   smileys: {
-    name: 'Smileys',
     titleEmoji: smileys.grinningFace,
     emojis: smileys
   },
   people: {
-    name: 'People',
     titleEmoji: people.manBeard,
     emojis: people
   },
   clothingAndAccessories: {
-    name: 'Clothing and accessories',
     titleEmoji: clothingAndAccessories.tShirt,
     emojis: clothingAndAccessories
   },
   animals: {
-    name: 'Animals',
     titleEmoji: animals.dogFace,
     emojis: animals
   },
   nature: {
-    name: 'Nature',
     titleEmoji: nature.evergreenTree,
     emojis: nature
   },
   food: {
-    name: 'Food',
     titleEmoji: food.doughnut,
     emojis: food
   },
   activities: {
-    name: 'Food',
     titleEmoji: activities.fishingPole,
     emojis: activities
   },
   travel: {
-    name: 'Travel',
     titleEmoji: travel.train,
     emojis: travel
   },
   objects: {
-    name: 'Objects',
     titleEmoji: objects.movieCamera,
     emojis: objects
   },
   symbols: {
-    name: 'Symbols',
     titleEmoji: symbols.redHeart,
     emojis: symbols
   },
   flags: {
-    name: 'Flags',
     titleEmoji: flags.triangularFlag,
     emojis: flags
   },
   bodyParts: {
-    name: 'Body parts',
     titleEmoji: bodyParts.leg,
     emojis: bodyParts
   }
 };
 
-export default emojis;
+const emojisCategories = Object.values(emojis).map((emojiCategory, categoryIndex) => {
+  const categoryName = Object.getOwnPropertyNames(emojis)[categoryIndex];
+
+  return {
+    ...emojiCategory,
+    id: categoryName,
+    name: getFormatedCategoryName(categoryName)
+  };
+});
+
+export default emojisCategories;
