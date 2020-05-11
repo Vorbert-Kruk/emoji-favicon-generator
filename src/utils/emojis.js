@@ -1,21 +1,22 @@
-import smileys from './smileys';
-import people from './people';
-import clothing from './clothing';
-import accessories from './accessories';
-import animals from './animals';
-import nature from './nature';
-import food from './food';
-import activities from './activities';
-import travel from './travel';
-import objects from './objects';
-import symbols from './symbols';
-import flags from './flags';
+import smileys from './categories/smileys';
+import people from './categories/people';
+import clothing from './categories/clothing';
+import clothingAndAccessories from './categories/clothingAndAccessories';
+import animals from './categories/animals';
+import nature from './categories/nature';
+import food from './categories/food';
+import activities from './categories/activities';
+import travel from './categories/travel';
+import objects from './categories/objects';
+import symbols from './categories/symbols';
+import flags from './categories/flags';
+import body from './categories/body';
 
 const emojis = {
   smileys,
   people,
   clothing,
-  accessories,
+  clothingAndAccessories,
   animals,
   nature,
   food,
@@ -23,7 +24,8 @@ const emojis = {
   travel,
   objects,
   symbols,
-  flags
+  flags,
+  body,
 };
 
 export default emojis;

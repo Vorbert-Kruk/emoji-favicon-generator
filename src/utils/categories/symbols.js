@@ -21,7 +21,7 @@ const symbols = {
   hundredPoints: '💯',
   angerSymbol: '💢',
   speechBalloon: '💬',
-  eyeinSpeechBubble: '👁️‍🗨️',
+  eyeInSpeechBubble: '👁️‍🗨️',
   leftSpeechBubble: '🗨',
   rightAngerBubble: '🗯',
   thoughtBalloon: '💭',
@@ -75,7 +75,7 @@ const symbols = {
   musicalNotes: '🎶',
   chartIncreasingwithYen: '💹',
   aTMSign: '🏧',
-  litterinBinSign: '🚮',
+  litterInBinSign: '🚮',
   potableWater: '🚰',
   wheelchairSymbol: '♿',
   mensRoom: '🚹',
@@ -125,7 +125,7 @@ const symbols = {
   yinYang: '☯',
   latinCross: '✝',
   orthodoxCross: '☦',
-  starandCrescent: '☪',
+  starAndCrescent: '☪',
   peaceSymbol: '☮',
   menorah: '🕎',
   dottedSixPointedStar: '🔯',
@@ -280,7 +280,7 @@ const symbols = {
   diamondwithaDot: '💠',
   radioButton: '🔘',
   whiteSquareButton: '🔳',
-  blackSquareButton: '🔲'
+  blackSquareButton: '🔲',
 };
 
 export default symbols;

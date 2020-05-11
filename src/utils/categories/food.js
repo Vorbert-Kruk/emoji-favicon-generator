@@ -110,9 +110,9 @@ const food = {
   mate: '🧉',
   ice: '🧊',
   chopsticks: '🥢',
-  forkandKnifewithPlate: '🍽',
-  forkandKnife: '🍴',
-  spoon: '🥄'
+  forkAndKnifewithPlate: '🍽',
+  forkAndKnife: '🍴',
+  spoon: '🥄',
 };
 
 export default food;
