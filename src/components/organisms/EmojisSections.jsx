@@ -12,8 +12,9 @@ const EmojisSections = () => {
       {emojiCategories.map(emojiCategory => (
         <EmojiSection
           emojis={emojiCategory.emojis}
-          sectionName={emojiCategory.name}
+          name={emojiCategory.name}
           key={emojiCategory.id}
+          id={emojiCategory.id}
         />
       ))}
     </StyledWrapper>

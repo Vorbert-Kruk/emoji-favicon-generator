@@ -6,19 +6,22 @@ import EmojiCard from 'components/atoms/EmojiCard';
 
 const StyledWrapper = styled.section``;
 
-const StyledSectionHeader = styled.h3``;
+const StyledSectionHeader = styled.h2`
+  color: ${({ theme }) => theme.accent};
+`;
 
 const propTypes = {
-  sectionName: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   emojis: PropTypes.objectOf(PropTypes.object).isRequired
 };
 
 const defaultProps = {};
 
-const EmojiSection = ({ sectionName, emojis }) => {
+const EmojiSection = ({ id, name, emojis }) => {
   return (
-    <StyledWrapper>
-      <StyledSectionHeader>{sectionName}</StyledSectionHeader>
+    <StyledWrapper id={id}>
+      <StyledSectionHeader>{name}</StyledSectionHeader>
       {Object.values(emojis).map(emoji => (
         <EmojiCard emoji={emoji} />
       ))}
