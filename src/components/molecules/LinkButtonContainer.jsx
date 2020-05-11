@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import styled from 'styled-components';
 
-import emojis from 'utils/emojis';
+import emojiCategories from 'utils/emojiCategories';
 import LinkButton from 'components/atoms/LinkButton';
 
 const StyledWrapper = styled.div`
@@ -15,11 +15,11 @@ const StyledWrapper = styled.div`
 const LinkButtonContainer = () => {
   return (
     <StyledWrapper>
-      {Object.values(emojis).map((emojiCategory, categoryIndex) => (
+      {Object.values(emojiCategories).map(emojiCategory => (
         <LinkButton
           emote={emojiCategory.titleEmoji}
-          key={emojiCategory.name}
-          href={`#${Object.getOwnPropertyNames(emojis)[categoryIndex]}`}
+          key={emojiCategory.id}
+          href={`#${emojiCategory.id}`}
         >
           {emojiCategory.name}
         </LinkButton>

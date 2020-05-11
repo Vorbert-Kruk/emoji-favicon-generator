@@ -64,7 +64,7 @@ const emojis = {
   }
 };
 
-const emojisCategories = Object.values(emojis).map((emojiCategory, categoryIndex) => {
+const emojiCategories = Object.values(emojis).map((emojiCategory, categoryIndex) => {
   const categoryName = Object.getOwnPropertyNames(emojis)[categoryIndex];
 
   return {
@@ -74,4 +74,4 @@ const emojisCategories = Object.values(emojis).map((emojiCategory, categoryIndex
   };
 });
 
-export default emojisCategories;
+export default emojiCategories;
