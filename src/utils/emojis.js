@@ -13,51 +13,63 @@ import bodyParts from './categories/bodyParts';
 
 const emojis = {
   smileys: {
-    categoryEmoji: smileys.grinningFace,
+    name: 'Smileys',
+    titleEmoji: smileys.grinningFace,
     emojis: smileys
   },
   people: {
-    categoryEmoji: people.manBeard,
+    name: 'People',
+    titleEmoji: people.manBeard,
     emojis: people
   },
   clothingAndAccessories: {
-    categoryEmoji: clothingAndAccessories.tShirt,
+    name: 'Clothing and accessories',
+    titleEmoji: clothingAndAccessories.tShirt,
     emojis: clothingAndAccessories
   },
   animals: {
-    categoryEmoji: animals.dogFace,
+    name: 'Animals',
+    titleEmoji: animals.dogFace,
     emojis: animals
   },
   nature: {
-    categoryEmoji: nature.evergreenTree,
+    name: 'Nature',
+    titleEmoji: nature.evergreenTree,
     emojis: nature
   },
   food: {
-    categoryEmoji: food.doughnut,
+    name: 'Food',
+    titleEmoji: food.doughnut,
     emojis: food
   },
   activities: {
-    categoryEmoji: activities.fishingPole,
+    name: 'Food',
+    titleEmoji: activities.fishingPole,
     emojis: activities
   },
   travel: {
-    categoryEmoji: travel.train,
+    name: 'Travel',
+    titleEmoji: travel.train,
     emojis: travel
   },
   objects: {
-    categoryEmoji: objects.movieCamera,
+    name: 'Objects',
+    titleEmoji: objects.movieCamera,
     emojis: objects
   },
   symbols: {
-    categoryEmoji: symbols.redHeart,
+    name: 'Symbols',
+    titleEmoji: symbols.redHeart,
     emojis: symbols
   },
   flags: {
-    categoryEmoji: flags.triangularFlag,
+    name: 'Flags',
+    titleEmoji: flags.triangularFlag,
     emojis: flags
   },
   bodyParts: {
-    categoryEmoji: bodyParts.leg,
+    name: 'Body parts',
+    titleEmoji: bodyParts.leg,
     emojis: bodyParts
   }
 };

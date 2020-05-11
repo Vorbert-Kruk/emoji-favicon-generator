@@ -13,27 +13,13 @@ const StyledWrapper = styled.div`
 `;
 
 const LinkButtonContainer = () => {
-  const formatCategoryName = categoryName =>
-    categoryName
-      .split(/(?=[A-Z])/)
-      .join(' ')
-      .toLowerCase();
-
   return (
     <StyledWrapper>
-      {Object.keys(emojis)
-        .map(emojiKey => {
-          const currentEmojiCategory = emojis[emojiKey];
-          return {
-            categoryName: formatCategoryName(emojiKey),
-            ...currentEmojiCategory
-          };
-        })
-        .map(emojiCategory => (
-          <LinkButton emote={emojiCategory.categoryEmoji} key={emojiCategory.categoryName} href="#">
-            {emojiCategory.categoryName}
-          </LinkButton>
-        ))}
+      {Object.values(emojis).map(emojiCategory => (
+        <LinkButton emote={emojiCategory.titleEmoji} key={emojiCategory.name} href="#">
+          {emojiCategory.name}
+        </LinkButton>
+      ))}
     </StyledWrapper>
   );
 };
