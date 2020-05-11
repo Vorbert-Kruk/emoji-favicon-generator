@@ -1,12 +1,12 @@
 import React from 'react';
 
 import withTheme from 'theme/withTheme';
-import Hero from 'components/organisms/Hero';
+import HomePage from 'views/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <HomePage />
     </div>
   );
 }

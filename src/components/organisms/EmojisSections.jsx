@@ -9,9 +9,9 @@ const StyledWrapper = styled.div``;
 const EmojisSections = () => {
   return (
     <StyledWrapper>
-      {Object.values(emojiCategories).map(emojiCategory => (
+      {emojiCategories.map(emojiCategory => (
         <EmojiSection
-          emoji={emojiCategory.emojis}
+          emojis={emojiCategory.emojis}
           sectionName={emojiCategory.name}
           key={emojiCategory.id}
         />
