@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 
 import LinkButtonContainer from 'components/molecules/LinkButtonContainer';
-
 import HeroTitle from 'components/atoms/HeroTitle';
 import HeroDescription from 'components/atoms/HeroDescription';
 import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
