@@ -6,6 +6,7 @@ import cx from 'classnames';
 // TODO Vorbert -> zastanowić się nad eksportem do ModalCloseButton
 import { useDispatch } from 'react-redux';
 
+import { copyToClipboard } from 'utils/utils';
 import Button from 'components/atoms/Button';
 import CodeLabel from 'components/atoms/CodeLabel';
 import ModalCloseButton from 'components/atoms/ModalCloseButton';
@@ -71,7 +72,8 @@ const EmojiPopup = () => {
       <CodeLabel emote={emoji} />
       <StyledButtonWrapper>
         <Button>Download SVG</Button>
-        <Button>Copy Code</Button>
+        {/* TODO Vorbert -> dodać kopiowanko */}
+        <Button onClick={() => copyToClipboard('heh')}>Copy Code</Button>
       </StyledButtonWrapper>
     </StyledWrapper>
   );
