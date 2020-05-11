@@ -82,8 +82,8 @@ const activities = {
   goalNet: '🥅',
   flagInHole: '⛳',
   iceSkate: '⛸',
-  fishIngPole: '🎣',
-  runnIngShirt: '🎽',
+  fishingPole: '🎣',
+  runningShirt: '🎽',
   skis: '🎿',
   sled: '🛷',
   curlingStone: '🥌',
@@ -108,7 +108,7 @@ const activities = {
   violin: '🎻',
   drum: '🥁',
   clapperBoard: '🎬',
-  bowAndArrow: '🏹',
+  bowAndArrow: '🏹'
 };
 
 export default activities;

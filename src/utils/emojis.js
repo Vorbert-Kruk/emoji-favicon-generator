@@ -1,6 +1,5 @@
 import smileys from './categories/smileys';
 import people from './categories/people';
-import clothing from './categories/clothing';
 import clothingAndAccessories from './categories/clothingAndAccessories';
 import animals from './categories/animals';
 import nature from './categories/nature';
@@ -13,19 +12,54 @@ import flags from './categories/flags';
 import body from './categories/body';
 
 const emojis = {
-  smileys,
-  people,
-  clothing,
-  clothingAndAccessories,
-  animals,
-  nature,
-  food,
-  activities,
-  travel,
-  objects,
-  symbols,
-  flags,
-  body,
+  smileys: {
+    categoryEmote: smileys.smilingFace,
+    ...smileys
+  },
+  people: {
+    categoryEmote: people.manBeard,
+    ...people
+  },
+  clothingAndAccessories: {
+    categoryEmote: clothingAndAccessories.tShirt,
+    ...clothingAndAccessories
+  },
+  animals: {
+    categoryEmote: animals.dogFace,
+    ...animals
+  },
+  nature: {
+    categoryEmote: nature.evergreenTree,
+    ...nature
+  },
+  food: {
+    categoryEmote: food.doughnut,
+    ...food
+  },
+  activities: {
+    categoryEmote: activities.fishingPole,
+    ...activities
+  },
+  travel: {
+    categoryEmote: travel.train,
+    ...travel
+  },
+  objects: {
+    categoryEmote: objects.movieCamera,
+    ...objects
+  },
+  symbols: {
+    categoryEmote: symbols.redHeart,
+    ...symbols
+  },
+  flags: {
+    categoryEmote: flags.triangularFlag,
+    ...flags
+  },
+  body: {
+    categoryEmote: body.leg,
+    ...body
+  }
 };
 
 export default emojis;
