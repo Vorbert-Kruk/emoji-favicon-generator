@@ -15,12 +15,12 @@ const StyledWrapper = styled.div`
   bottom: 1.25rem;
   right: 1.25rem;
   padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
   background-color: ${({ theme }) => theme.accent};
+  border-radius: 0.5rem;
   flex-direction: column;
   align-items: center;
+  transition: all 350ms ease;
   transform: translateX(calc(100% + 1.25rem));
-  transition: 350ms ease;
   min-width: calc((100vw - ${({ theme }) => theme.maxContentWidth}) * 0.5 - 2.5rem);
 
   &.visible {
