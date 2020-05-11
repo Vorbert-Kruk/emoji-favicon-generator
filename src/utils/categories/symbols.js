@@ -8,6 +8,7 @@ const symbols = {
   twoHearts: '💕',
   heartDecoration: '💟',
   brokenHeart: '💔',
+  redHeart: '❤️',
   orangeHeart: '🧡',
   yellowHeart: '💛',
   greenHeart: '💚',
