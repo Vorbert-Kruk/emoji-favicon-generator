@@ -50,6 +50,7 @@ const StyledButtonWrapper = styled.div`
   justify-content: space-between;
 `;
 
+// TODO Vorbert -> dodać React suspense / lazy loading
 const EmojiPopup = () => {
   const { visible, emoji } = useSelector(state => state.modalReducer);
   const styledWrapperClassName = cx({ visible });
