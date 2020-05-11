@@ -3,7 +3,7 @@ import actionTypes from './actionTypes';
 export const storeEmoji = emojiData => dispatch => {
   dispatch({
     type: actionTypes.STORE_EMOJI,
-    emojiData
+    data: emojiData
   });
 };
 

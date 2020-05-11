@@ -1,14 +1,14 @@
 import React from 'react';
 
 import withTheme from 'theme/withTheme';
-import HomePage from 'views/homepage/HomePage';
-import EmojiPopup from 'components/organisms/EmojiPopup';
+import HomePage from 'views/HomePage';
+import Modal from 'components/organisms/modal/Modal';
 
 function App() {
   return (
     <div className="App">
       <HomePage />
-      <EmojiPopup />
+      <Modal />
     </div>
   );
 }

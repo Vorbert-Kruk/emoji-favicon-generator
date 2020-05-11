@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
 
-import homePageReducer from 'views/homepage/reducer';
+import modalReducer from 'components/organisms/modal/reducer';
 
-export default combineReducers({ homePageReducer });
+export default combineReducers({ modalReducer });

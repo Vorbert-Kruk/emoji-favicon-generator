@@ -2,17 +2,17 @@ import actionTypes from './actionTypes';
 
 const initialState = {
   emoji: undefined,
-  modal: undefined
+  visible: undefined
 };
 
-export default function homePageReducer(state = initialState, action) {
+export default function modalReducer(state = initialState, action) {
   switch (action.type) {
     case actionTypes.STORE_EMOJI:
-      return '';
+      return { ...state, emoji: action.data };
     case actionTypes.SHOW_MODAL:
-      return '';
+      return { ...state, visible: true };
     case actionTypes.HIDE_MODAL:
-      return '';
+      return { ...state, visible: false };
     default:
       return state;
   }
