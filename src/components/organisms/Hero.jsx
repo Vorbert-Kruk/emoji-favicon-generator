@@ -1,10 +1,11 @@
-import React, { memo } from 'react';
+import React, { memo, lazy, Suspense } from 'react';
 import styled from 'styled-components';
 
-import LinkButtonContainer from 'components/molecules/LinkButtonContainer';
 import HeroTitle from 'components/atoms/HeroTitle';
 import HeroDescription from 'components/atoms/HeroDescription';
 import EmojiDisplayCard from 'components/atoms/EmojiDisplayCard';
+
+const LinkButtonContainer = lazy(() => import('components/molecules/LinkButtonContainer'));
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.accent};
@@ -39,7 +40,9 @@ const Hero = () => {
         <EmojiDisplayCard />
         <HeroTitle>Emoji favicon generator</HeroTitle>
         <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
-        <LinkButtonContainer />
+        <Suspense fallback={<div />}>
+          <LinkButtonContainer />
+        </Suspense>
       </StyledContentWrapper>
     </StyledWrapper>
   );

@@ -1,7 +1,8 @@
-import React, { memo } from 'react';
+import React, { memo, lazy, Suspense } from 'react';
 
 import Hero from 'components/organisms/Hero';
-import EmojisSections from 'components/organisms/EmojisSections';
+
+const EmojisSections = lazy(() => import('components/organisms/EmojisSections'));
 
 const propTypes = {};
 const defaultProps = {};
@@ -10,7 +11,9 @@ const HomePage = props => {
   return (
     <>
       <Hero />
-      <EmojisSections />
+      <Suspense fallback={<div />}>
+        <EmojisSections />
+      </Suspense>
     </>
   );
 };
