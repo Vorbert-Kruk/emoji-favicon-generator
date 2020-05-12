@@ -18,6 +18,7 @@ const StyledWrapper = styled.div`
 
   &:hover {
     box-shadow: 0 19px 40px rgba(0, 0, 0, 0.35);
+    transform: scale(1.25);
     cursor: pointer;
   }
 `;
