@@ -25,7 +25,7 @@ const propTypes = {
 const defaultProps = {};
 
 const LinkButton = ({ children, emote, ...others }) => (
-  <StyledButtonWrapper {...others}>
+  <StyledButtonWrapper {...others} as="a">
     {children}
     <Emoji symbol={emote} />
   </StyledButtonWrapper>
