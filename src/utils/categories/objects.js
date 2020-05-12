@@ -156,7 +156,13 @@ const objects = {
   cigarette: '🚬',
   moai: '🗿',
   potableWater: '🚰',
-  jackOLantern: '🎃'
+  jackOLantern: '🎃',
+  chequeredFlag: '🏁',
+  triangularFlag: '🚩',
+  crossedFlags: '🎌',
+  blackFlag: '🏴',
+  rainbowFlag: '🏳️‍🌈',
+  pirateFlag: '🏴‍☠️'
 };
 
 export default objects;
