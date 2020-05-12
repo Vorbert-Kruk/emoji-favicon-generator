@@ -1,11 +1,11 @@
-import React, { memo } from 'react';
+import React, { memo, useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 import cx from 'classnames';
 // TODO Vorbert -> zastanowić się nad eksportem do ModalCloseButton
 import { useDispatch } from 'react-redux';
 
-import { copyToClipboard } from 'utils/utils';
+import { copyToClipboard, getFaviconEmoji } from 'utils/utils';
 import Button from 'components/atoms/Button';
 import CodeLabel from 'components/atoms/CodeLabel';
 import EmojiDisplayCard from 'components/atoms/EmojiDisplayCard';
@@ -46,9 +46,14 @@ const StyledButtonWrapper = styled.div`
 
 // TODO Vorbert -> dodać React suspense / lazy loading
 const EmojiPopup = () => {
+  const [svgCode, setSvgCode] = useState('');
   const { visible, emoji } = useSelector(state => state.modalReducer);
   const styledWrapperClassName = cx({ visible });
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setSvgCode(getFaviconEmoji(emoji));
+  }, [emoji]);
 
   const handleHideModal = () => {
     dispatch(hideModal());
@@ -59,11 +64,10 @@ const EmojiPopup = () => {
       <ModalCloseButton onClick={handleHideModal} />
       <StyledHeader>Picked emoji:</StyledHeader>
       <EmojiDisplayCard emoji={emoji} offsetTop />
-      <CodeLabel emote={emoji} />
+      <CodeLabel code={svgCode} />
       <StyledButtonWrapper>
         <Button>Download SVG</Button>
-        {/* TODO Vorbert -> dodać kopiowanko */}
-        <Button onClick={() => copyToClipboard('heh')}>Copy Code</Button>
+        <Button onClick={() => copyToClipboard(svgCode)}>Copy Code</Button>
       </StyledButtonWrapper>
     </StyledWrapper>
   );

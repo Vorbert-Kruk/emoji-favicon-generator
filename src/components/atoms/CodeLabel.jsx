@@ -2,8 +2,6 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { getFaviconEmoji } from 'utils/utils';
-
 const StyledWrapper = styled.div`
   margin-top: 0.75rem;
   font-family: 'Roboto Mono';
@@ -15,15 +13,13 @@ const StyledWrapper = styled.div`
 `;
 
 const propTypes = {
-  emote: PropTypes.string.isRequired
+  code: PropTypes.string.isRequired
 };
 
 const defaultProps = {};
 
-// TODO Vorbert -> dodać renderowanie <Emoji symbol={?} /> do funkcji getFaviconEmoji();
-
-const CodeLabel = ({ emote }) => {
-  return <StyledWrapper>{getFaviconEmoji(emote)}</StyledWrapper>;
+const CodeLabel = ({ code }) => {
+  return <StyledWrapper>{code}</StyledWrapper>;
 };
 
 CodeLabel.propTypes = propTypes;
