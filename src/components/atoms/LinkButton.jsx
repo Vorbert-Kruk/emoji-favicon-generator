@@ -3,31 +3,17 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
 
-const StyledButtonWrapper = styled.a`
+import TemplateButton from 'styling-templates/TemplateButton';
+
+const StyledButtonWrapper = styled(TemplateButton)`
   line-height: 100%;
   font-size: 1.75rem;
-  color: ${({ theme }) => theme.secondary};
-  background-color: ${({ theme }) => theme.secondaryOpaque};
-  padding: 0.15em 0.5em;
-  border-radius: 0.5rem;
   margin-right: 0.75rem;
   margin-top: 0.75rem;
   text-decoration: none;
-  transition: all 150ms ease;
 
   span {
     margin-left: 0.35rem;
-  }
-
-  &:hover,
-  &:focus {
-    transform: translateY(-0.2em);
-    background-color: ${({ theme }) => theme.secondary};
-    color: ${({ theme }) => theme.accent};
-  }
-
-  &:active {
-    transform: translateY(0);
   }
 `;
 
