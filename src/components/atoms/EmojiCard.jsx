@@ -6,6 +6,8 @@ import { useDispatch } from 'react-redux';
 
 import { storeEmoji, showModal } from 'components/organisms/modal/actions';
 
+// TODO Vorbert -> zastanowić się nad tabIndex i focusem
+
 const StyledWrapper = styled.div`
   padding: 1rem 0.75rem;
   width: 100%;
@@ -17,8 +19,7 @@ const StyledWrapper = styled.div`
   text-align: center;
   outline: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
     box-shadow: 0 19px 40px rgba(0, 0, 0, 0.35);
     transform: scale(1.25);
     cursor: pointer;
@@ -40,7 +41,7 @@ const EmojiCard = ({ emoji }) => {
   };
 
   return (
-    <StyledWrapper onClick={handleClick} tabIndex={1}>
+    <StyledWrapper onClick={handleClick}>
       <Emoji symbol={emoji} />
     </StyledWrapper>
   );
