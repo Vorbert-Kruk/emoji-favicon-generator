@@ -5,10 +5,10 @@ export const getFormatedCategoryName = categoryName =>
     .toLowerCase();
 
 export const getSvgEmoji = emoji =>
-  `<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${emoji}</text></svg>">`;
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">${emoji}</text></svg>`;
 
 export const getFaviconEmoji = emoji =>
-  `<link rel="icon" href="data:image/svg+xml,${getSvgEmoji(emoji)}`;
+  `<link rel="icon" href="data:image/svg+xml,${getSvgEmoji(emoji).replace(/["]/g, '%22')}">`;
 
 const createTemporaryTextArea = () => {
   const textArea = document.createElement('textarea');
