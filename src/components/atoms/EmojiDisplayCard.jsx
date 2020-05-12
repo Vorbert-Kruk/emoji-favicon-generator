@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Emoji from 'a11y-react-emoji';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledWrapper = styled.div`
   display: inline-block;
@@ -11,9 +11,11 @@ const StyledWrapper = styled.div`
   border-radius: 0.75rem;
   line-height: 1;
 
-  &.offset_top {
-    margin-top: 0.75rem;
-  }
+  ${({ offsetTop }) =>
+    offsetTop &&
+    css`
+      margin-top: 0.75rem;
+    `}
 `;
 
 const propTypes = {
@@ -24,8 +26,8 @@ const defaultProps = {
   emoji: '😀'
 };
 
-const EmojiDisplayCard = ({ emoji }) => (
-  <StyledWrapper>
+const EmojiDisplayCard = ({ emoji, ...others }) => (
+  <StyledWrapper {...others}>
     <Emoji symbol={emoji} />
   </StyledWrapper>
 );

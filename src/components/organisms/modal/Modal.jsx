@@ -59,7 +59,7 @@ const EmojiPopup = () => {
     <StyledWrapper className={styledWrapperClassName}>
       <ModalCloseButton onClick={handleHideModal} />
       <StyledHeader>Picked emoji:</StyledHeader>
-      <EmojiDisplayCard emoji={emoji} />
+      <EmojiDisplayCard emoji={emoji} offsetTop />
       <CodeLabel emote={emoji} />
       <StyledButtonWrapper>
         <Button>Download SVG</Button>
