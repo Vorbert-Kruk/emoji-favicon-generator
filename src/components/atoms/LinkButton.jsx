@@ -13,9 +13,21 @@ const StyledButtonWrapper = styled.a`
   margin-right: 0.75rem;
   margin-top: 0.75rem;
   text-decoration: none;
+  transition: all 150ms ease;
 
   span {
     margin-left: 0.35rem;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-0.2em);
+    background-color: ${({ theme }) => theme.secondary};
+    color: ${({ theme }) => theme.accent};
+  }
+
+  &:active {
+    transform: translateY(0);
   }
 `;
 
