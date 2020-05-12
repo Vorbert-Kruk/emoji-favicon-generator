@@ -12,6 +12,10 @@ const StyledSectionHeader = styled.h2`
   margin-bottom: 0.75rem;
   font-size: 2.5rem;
   color: ${({ theme }) => theme.accent};
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
 `;
 
 const StyledEmojiWrapper = styled.div`
