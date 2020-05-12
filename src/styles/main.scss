@@ -22,3 +22,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $secondary;
 }
+
+button,
+div {
+  outline: none;
+}
