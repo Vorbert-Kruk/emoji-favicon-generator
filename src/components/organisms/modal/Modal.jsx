@@ -17,7 +17,7 @@ const StyledWrapper = styled.div`
   display: flex;
   bottom: 1.25rem;
   right: 1.25rem;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 0.95rem;
   background-color: ${({ theme }) => theme.accent};
   border-radius: 0.5rem;
   flex-direction: column;
