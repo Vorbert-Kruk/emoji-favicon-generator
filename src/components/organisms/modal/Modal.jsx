@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import Emoji from 'a11y-react-emoji';
 import cx from 'classnames';
 // TODO Vorbert -> zastanowić się nad eksportem do ModalCloseButton
 import { useDispatch } from 'react-redux';
