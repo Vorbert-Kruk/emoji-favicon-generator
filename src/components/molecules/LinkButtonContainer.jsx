@@ -10,6 +10,10 @@ const StyledWrapper = styled.div`
   flex-wrap: wrap;
   margin-top: 0.75rem;
   justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 0.5rem;
+  }
 `;
 
 const LinkButtonContainer = () => {
