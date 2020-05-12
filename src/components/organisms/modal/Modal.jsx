@@ -28,6 +28,7 @@ const StyledWrapper = styled.div`
 
   &.visible {
     transform: translateX(0);
+    box-shadow: 0 0 3.25rem 0 rgba(23, 23, 23, 0.35);
   }
 `;
 
