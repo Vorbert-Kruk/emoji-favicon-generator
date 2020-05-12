@@ -5,7 +5,7 @@ import cx from 'classnames';
 // TODO Vorbert -> zastanowić się nad eksportem do ModalCloseButton
 import { useDispatch } from 'react-redux';
 
-import { copyToClipboard, getFaviconEmoji } from 'utils/utils';
+import { copyToClipboard, getFaviconEmoji, downloadEmojiAsSvg } from 'utils/utils';
 import Button from 'components/atoms/Button';
 import CodeLabel from 'components/atoms/CodeLabel';
 import EmojiDisplayCard from 'components/atoms/EmojiDisplayCard';
@@ -59,6 +59,14 @@ const EmojiPopup = () => {
     dispatch(hideModal());
   };
 
+  const handleDownloadClick = () => {
+    downloadEmojiAsSvg(emoji);
+  };
+
+  const handleCopyToClipboardClick = () => {
+    copyToClipboard(svgCode);
+  };
+
   return (
     <StyledWrapper className={styledWrapperClassName}>
       <ModalCloseButton onClick={handleHideModal} />
@@ -66,8 +74,8 @@ const EmojiPopup = () => {
       <EmojiDisplayCard emoji={emoji} offsetTop />
       <CodeLabel code={svgCode} />
       <StyledButtonWrapper>
-        <Button>Download SVG</Button>
-        <Button onClick={() => copyToClipboard(svgCode)}>Copy Code</Button>
+        <Button onClick={handleDownloadClick}>Download SVG</Button>
+        <Button onClick={handleCopyToClipboardClick}>Copy Code</Button>
       </StyledButtonWrapper>
     </StyledWrapper>
   );
