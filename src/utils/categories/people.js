@@ -55,7 +55,6 @@ const people = {
   womanHealthWorker: '👩‍⚕️',
   manStudent: '👨‍🎓',
   womanStudent: '👩‍🎓',
-  teacher: '🧑‍🏫',
   manTeacher: '👨‍🏫',
   womanTeacher: '👩‍🏫',
   manJudge: '👨‍⚖️',
