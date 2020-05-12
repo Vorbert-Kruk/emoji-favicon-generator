@@ -1,7 +1,7 @@
 import actionTypes from './actionTypes';
 
 const initialState = {
-  emoji: '😀',
+  emoji: undefined,
   visible: false
 };
 
