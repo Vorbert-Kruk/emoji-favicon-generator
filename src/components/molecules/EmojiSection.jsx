@@ -21,7 +21,7 @@ const StyledSectionHeader = styled.h2`
 const StyledEmojiWrapper = styled.div`
   display: grid;
   margin-left: -0.75rem;
-  grid-template-columns: repeat(auto-fit, 71px);
+  grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
   justify-items: center;
   justify-content: stretch;
   align-items: center;
