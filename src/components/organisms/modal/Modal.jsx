@@ -75,8 +75,12 @@ const EmojiPopup = () => {
       <EmojiDisplayCard emoji={emoji} offsetTop />
       <CodeLabel code={svgCode} />
       <StyledButtonWrapper>
-        <Button onClick={handleDownloadClick}>Download SVG</Button>
-        <Button onClick={handleCopyToClipboardClick}>Copy Code</Button>
+        <Button onClick={handleDownloadClick} aria-label="Download the svg file">
+          Download SVG
+        </Button>
+        <Button onClick={handleCopyToClipboardClick} aria-label="Copy the favicon code">
+          Copy Code
+        </Button>
       </StyledButtonWrapper>
     </StyledWrapper>
   );

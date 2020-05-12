@@ -25,6 +25,7 @@ const LinkButtonContainer = () => {
     <StyledWrapper>
       {Object.values(emojiCategories).map(emojiCategory => (
         <LinkButton
+          aria-label={`Go to the ${emojiCategory.name} category`}
           emote={emojiCategory.titleEmoji}
           key={emojiCategory.id}
           href={`#${emojiCategory.id}`}
