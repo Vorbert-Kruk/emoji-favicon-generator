@@ -11,6 +11,11 @@ const StyledWrapper = styled.div`
   color: ${({ theme }) => theme.accent};
   max-width: 380px;
   user-select: all;
+  word-break: break-all;
+
+  @media screen and (max-width: 450.4px) {
+    max-width: calc(100vw - 4.4rem);
+  }
 `;
 
 const propTypes = {
