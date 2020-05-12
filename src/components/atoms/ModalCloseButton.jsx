@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-const ModalCloseButton = styled.button`
+const ModalCloseButton = styled.button.attrs({
+  'aria-label': 'Close the modal'
+})`
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
