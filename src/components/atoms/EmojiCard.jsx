@@ -15,8 +15,10 @@ const StyledWrapper = styled.div`
   transition: all 150ms ease;
   color: ${({ theme }) => theme.darkColor};
   text-align: center;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     box-shadow: 0 19px 40px rgba(0, 0, 0, 0.35);
     transform: scale(1.25);
     cursor: pointer;
@@ -38,7 +40,7 @@ const EmojiCard = ({ emoji }) => {
   };
 
   return (
-    <StyledWrapper onClick={handleClick}>
+    <StyledWrapper onClick={handleClick} tabIndex={1}>
       <Emoji symbol={emoji} />
     </StyledWrapper>
   );
