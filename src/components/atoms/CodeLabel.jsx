@@ -9,7 +9,7 @@ const StyledWrapper = styled.div`
   padding: 0.75rem;
   background-color: ${({ theme }) => theme.secondary};
   color: ${({ theme }) => theme.accent};
-  max-width: calc((100vw - ${({ theme }) => theme.maxContentWidth}) * 0.5 + 1.25rem);
+  max-width: 380px;
   user-select: all;
 `;
 

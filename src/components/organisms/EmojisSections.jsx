@@ -7,6 +7,7 @@ import EmojiSection from 'components/molecules/EmojiSection';
 const StyledWrapper = styled.div`
   max-width: ${({ theme }) => theme.maxContentWidth};
   margin: 0 auto;
+  padding-bottom: 2.25rem;
 `;
 
 const EmojisSections = () => {

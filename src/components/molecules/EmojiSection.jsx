@@ -9,7 +9,7 @@ const StyledWrapper = styled.section`
 `;
 
 const StyledSectionHeader = styled.h2`
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.35rem;
   font-size: 2.5rem;
   color: ${({ theme }) => theme.accent};
 
