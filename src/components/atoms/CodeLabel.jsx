@@ -10,6 +10,7 @@ const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.secondary};
   color: ${({ theme }) => theme.accent};
   max-width: calc((100vw - ${({ theme }) => theme.maxContentWidth}) * 0.5 + 1.25rem);
+  user-select: all;
 `;
 
 const propTypes = {
