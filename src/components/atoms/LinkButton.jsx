@@ -15,6 +15,10 @@ const StyledButtonWrapper = styled(TemplateButton)`
   span {
     margin-left: 0.35rem;
   }
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const propTypes = {
