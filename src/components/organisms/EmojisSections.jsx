@@ -8,6 +8,10 @@ const StyledWrapper = styled.div`
   max-width: ${({ theme }) => theme.maxContentWidth};
   margin: 0 auto;
   padding-bottom: 2.25rem;
+
+  @media screen and (max-width: ${({ theme }) => theme.maxContentWidth}) {
+    padding: 0 3%;
+  }
 `;
 
 const EmojisSections = () => {

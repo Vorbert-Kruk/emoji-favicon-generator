@@ -18,6 +18,15 @@ const StyledContentWrapper = styled.div`
   max-width: ${({ theme }) => theme.maxContentWidth};
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: ${({ theme }) => theme.maxContentWidth}) {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 1.75rem 3%;
+  }
 `;
 
 const propTypes = {};
