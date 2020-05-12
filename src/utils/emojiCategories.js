@@ -8,7 +8,6 @@ import activities from './categories/activities';
 import travel from './categories/travel';
 import objects from './categories/objects';
 import symbols from './categories/symbols';
-import flags from './categories/flags';
 import bodyParts from './categories/bodyParts';
 
 import { getFormatedCategoryName } from './utils';
@@ -53,10 +52,6 @@ const emojis = {
   symbols: {
     titleEmoji: symbols.redHeart,
     emojis: symbols
-  },
-  flags: {
-    titleEmoji: flags.triangularFlag,
-    emojis: flags
   },
   bodyParts: {
     titleEmoji: bodyParts.leg,
