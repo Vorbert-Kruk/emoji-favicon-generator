@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Emoji from 'a11y-react-emoji';
@@ -50,4 +50,4 @@ const EmojiCard = ({ emoji }) => {
 EmojiCard.propTypes = propTypes;
 EmojiCard.defaultProps = defaultProps;
 
-export default EmojiCard;
+export default memo(EmojiCard);
