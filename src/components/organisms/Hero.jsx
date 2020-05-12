@@ -1,11 +1,10 @@
 import React, { memo } from 'react';
 import styled from 'styled-components';
-import Emoji from 'a11y-react-emoji';
 
 import LinkButtonContainer from 'components/molecules/LinkButtonContainer';
 import HeroTitle from 'components/atoms/HeroTitle';
 import HeroDescription from 'components/atoms/HeroDescription';
-import HeroEmojiCard from 'components/atoms/HeroEmojiCard';
+import EmojiDisplayCard from 'components/atoms/EmojiDisplayCard';
 
 const StyledWrapper = styled.div`
   background-color: ${({ theme }) => theme.accent};
@@ -28,9 +27,7 @@ const Hero = () => {
   return (
     <StyledWrapper>
       <StyledContentWrapper>
-        <HeroEmojiCard>
-          <Emoji symbol="😀" />
-        </HeroEmojiCard>
+        <EmojiDisplayCard />
         <HeroTitle>Emoji favicon generator</HeroTitle>
         <HeroDescription>Pick an emoji and get the svg file or the svg code!</HeroDescription>
         <LinkButtonContainer />

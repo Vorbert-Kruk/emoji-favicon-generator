@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { copyToClipboard } from 'utils/utils';
 import Button from 'components/atoms/Button';
 import CodeLabel from 'components/atoms/CodeLabel';
+import EmojiDisplayCard from 'components/atoms/EmojiDisplayCard';
 import ModalCloseButton from 'components/atoms/ModalCloseButton';
 import { hideModal } from 'components/organisms/modal/actions';
 
@@ -36,14 +37,6 @@ const StyledHeader = styled.h3`
   text-align: center;
 `;
 
-const StyledEmojiWrapper = styled.div`
-  margin-top: 0.75rem;
-  padding: 1rem 1.25rem;
-  font-size: 4rem;
-  background-color: ${({ theme }) => theme.secondary};
-  border-radius: 0.75rem;
-`;
-
 const StyledButtonWrapper = styled.div`
   display: flex;
   margin-top: 0.75rem;
@@ -66,9 +59,7 @@ const EmojiPopup = () => {
     <StyledWrapper className={styledWrapperClassName}>
       <ModalCloseButton onClick={handleHideModal} />
       <StyledHeader>Picked emoji:</StyledHeader>
-      <StyledEmojiWrapper>
-        <Emoji symbol={emoji} />
-      </StyledEmojiWrapper>
+      <EmojiDisplayCard emoji={emoji} />
       <CodeLabel emote={emoji} />
       <StyledButtonWrapper>
         <Button>Download SVG</Button>
