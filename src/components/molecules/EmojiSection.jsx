@@ -10,7 +10,9 @@ const StyledWrapper = styled.section`
 
 const StyledSectionHeader = styled.h2`
   margin-bottom: 0.35rem;
+  padding-top: 0.35rem;
   font-size: 2.5rem;
+  line-height: 1.1;
   color: ${({ theme }) => theme.accent};
 
   &::first-letter {
