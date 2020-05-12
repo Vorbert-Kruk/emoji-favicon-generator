@@ -19,6 +19,10 @@ const StyledButtonWrapper = styled(TemplateButton)`
   @media screen and (max-width: 750px) {
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.25rem;
+  }
 `;
 
 const propTypes = {

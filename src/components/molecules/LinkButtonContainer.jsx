@@ -14,6 +14,10 @@ const StyledWrapper = styled.div`
   @media screen and (max-width: 800px) {
     margin-top: 0.5rem;
   }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 0;
+  }
 `;
 
 const LinkButtonContainer = () => {
