@@ -65,12 +65,13 @@ const StyledIcon = styled.span`
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const isVisibleRef = useRef(isVisible);
   const heroSectionRef = useRef(undefined);
   const buttonClassName = cx({ visible: isVisible });
 
   const watchForVisibilityToggle = () => {
     const isHeroSectionVisible = isElementVisibleOnScreen(heroSectionRef.current);
-    setIsVisible(!isHeroSectionVisible);
+    isVisibleRef !== isHeroSectionVisible && setIsVisible(!isHeroSectionVisible);
   };
 
   useEffect(() => {
