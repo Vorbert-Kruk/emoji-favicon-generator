@@ -18,6 +18,10 @@ const StyledSectionHeader = styled.h2`
   &::first-letter {
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+  }
 `;
 
 const StyledEmojiWrapper = styled.div`
@@ -27,6 +31,10 @@ const StyledEmojiWrapper = styled.div`
   justify-items: center;
   justify-content: stretch;
   align-items: center;
+
+  @media screen and (max-width: 450px) {
+    margin-left: 0;
+  }
 `;
 
 const propTypes = {
