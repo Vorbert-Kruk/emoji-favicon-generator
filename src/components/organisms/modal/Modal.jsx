@@ -45,8 +45,7 @@ const StyledButtonWrapper = styled.div`
   justify-content: space-between;
 `;
 
-// TODO Vorbert -> dodać React suspense / lazy loading
-const EmojiPopup = () => {
+const Modal = () => {
   const [svgCode, setSvgCode] = useState('');
   const [codeWasCopied, setCodeWasCopied] = useState(false);
   const { visible, emoji } = useSelector(state => state.modalReducer);
@@ -92,4 +91,4 @@ const EmojiPopup = () => {
   );
 };
 
-export default memo(EmojiPopup);
+export default memo(Modal);
