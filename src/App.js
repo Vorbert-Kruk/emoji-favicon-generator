@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import withTheme from 'theme/withTheme';
 import HomePage from 'views/HomePage';
-import Modal from 'components/organisms/modal/Modal';
+
+const Modal = lazy(() => import('components/organisms/modal/Modal'));
 
 function App() {
   return (
     <div className="App">
       <HomePage />
-      <Modal />
+      <Suspense fallback={<div />}>
+        <Modal />
+      </Suspense>
     </div>
   );
 }
