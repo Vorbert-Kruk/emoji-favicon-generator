@@ -4,7 +4,9 @@ import cx from 'classnames';
 
 import { scrollTo, isElementVisibleOnScreen } from 'utils/utils';
 
-const StyledWrapper = styled.button`
+const StyledWrapper = styled.button.attrs({
+  'aria-label': 'Scroll to the top of the document'
+})`
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
