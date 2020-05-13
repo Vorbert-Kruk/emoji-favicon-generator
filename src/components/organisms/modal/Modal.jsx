@@ -54,6 +54,7 @@ const Modal = () => {
 
   useEffect(() => {
     setSvgCode(getFaviconEmoji(emoji));
+    setCodeWasCopied(false);
   }, [emoji]);
 
   useEffect(() => {
