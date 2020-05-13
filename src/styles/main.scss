@@ -27,3 +27,11 @@ button,
 div {
   outline: none;
 }
+
+button {
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

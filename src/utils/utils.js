@@ -40,3 +40,12 @@ export const downloadSvgFile = svg => {
 
 // TODO Vorbert -> zastanowić sie nad nazywaniem emoji
 export const downloadEmojiAsSvg = emoji => downloadSvgFile(getSvgEmoji(emoji));
+
+export const scrollTo = (element, scrollToElementStart = true) =>
+  element &&
+  element.scrollIntoView({ behavior: 'smooth', block: scrollToElementStart ? 'start' : 'end' });
+
+export const isElementVisibleOnScreen = element => {
+  const elementPosition = element.getBoundingClientRect();
+  return elementPosition.top < window.innerHeight && elementPosition.bottom >= 0;
+};

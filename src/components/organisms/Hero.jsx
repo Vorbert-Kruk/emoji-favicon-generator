@@ -35,7 +35,7 @@ const defaultProps = {};
 
 const Hero = () => {
   return (
-    <StyledWrapper>
+    <StyledWrapper className="hero">
       <StyledContentWrapper>
         <EmojiDisplayCard />
         <HeroTitle>Emoji favicon generator</HeroTitle>
