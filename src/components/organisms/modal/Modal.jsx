@@ -48,6 +48,7 @@ const StyledButtonWrapper = styled.div`
 // TODO Vorbert -> dodać React suspense / lazy loading
 const EmojiPopup = () => {
   const [svgCode, setSvgCode] = useState('');
+  const [codeWasCopied, setCodeWasCopied] = useState(false);
   const { visible, emoji } = useSelector(state => state.modalReducer);
   const styledWrapperClassName = cx({ visible });
   const dispatch = useDispatch();
@@ -55,6 +56,10 @@ const EmojiPopup = () => {
   useEffect(() => {
     setSvgCode(getFaviconEmoji(emoji));
   }, [emoji]);
+
+  useEffect(() => {
+    !visible && setCodeWasCopied(false);
+  }, [visible]);
 
   const handleHideModal = () => {
     dispatch(hideModal());
@@ -66,6 +71,7 @@ const EmojiPopup = () => {
 
   const handleCopyToClipboardClick = () => {
     copyToClipboard(svgCode);
+    setCodeWasCopied(!codeWasCopied);
   };
 
   return (
@@ -79,7 +85,7 @@ const EmojiPopup = () => {
           Download SVG
         </Button>
         <Button onClick={handleCopyToClipboardClick} aria-label="Copy the favicon code">
-          Copy Code
+          {codeWasCopied ? 'Copied ✔' : 'Copy code'}
         </Button>
       </StyledButtonWrapper>
     </StyledWrapper>

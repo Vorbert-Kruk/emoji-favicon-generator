@@ -6,6 +6,7 @@ const TemplateButton = styled.button`
   border: none;
   padding: 0.35rem 0.75rem;
   border-radius: 0.3em;
+  line-height: 1.2;
   color: ${({ theme }) => theme.secondary};
   background-color: ${({ theme }) => theme.secondaryOpaque};
   transition: all 150ms ease;
